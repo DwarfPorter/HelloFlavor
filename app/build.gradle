@@ -23,6 +23,19 @@ android {
             applicationIdSuffix ".debugStaging"
         }
     }
+    flavorDimensions "version"
+    productFlavors {
+        freeConfig {
+            dimension "version"
+            applicationIdSuffix '.free'
+            versionNameSuffix '-free'
+        }
+        proConfig {
+            dimension "version"
+            applicationIdSuffix '.pro'
+            versionNameSuffix '-pro'
+        }
+    }
 }
 
 dependencies {
